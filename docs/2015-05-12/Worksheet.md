@@ -28,6 +28,8 @@ Launching a tiny Linux with Vagrant
 Launching and provisioning a usable Linux with Vagrant and Puppet
 =================================================================
 
+![tahr](http://www.exclusiveadventuresnz.com/images/hunting/big-game/bull-tahr/bull-tahr-banner1.jpg)
+
 - Have a look at this edited [Vagrantfile](https://github.com/dmlond/arangs2015/blob/master/conf/vagrant/Vagrantfile)
 - Which Linux distribution is specified in this file? Can you find it in the vagrant cloud? Is this a common distribution? 
 How does it compare to the operating system of your host desktop? Are there likely to be guest additions for this
@@ -37,6 +39,7 @@ example of provisioning using shell commands in the Vagrantfile. Which provision
 - Install `puppet` using the following commands:
 
 ```
+    wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
     sudo dpkg -i puppetlabs-release-trusty.deb
     sudo apt-get update
     sudo apt-get -y install puppet
